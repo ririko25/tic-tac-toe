@@ -15,8 +15,6 @@ module.exports = {
     },
     module: {
         rules: [
-            // the 'transform-runtime' plugin tells babel to require the runtime
-            // instead of inlining it.
             {
                 test: /\.jsx?$/,
                 exclude: /(node_modules)/,
@@ -27,7 +25,6 @@ module.exports = {
                             '@babel/preset-env',
                             "@babel/preset-react"
                         ],
-
                     }
                 }
             }
